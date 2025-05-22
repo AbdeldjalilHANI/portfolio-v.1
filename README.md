@@ -2,8 +2,18 @@
 
 Welcome to my personal portfolio! This website showcases my academic background, professional experience, and projects in artificial intelligence, backend development, and research. It is designed to reflect my journey as a **Ph.D. researcher**, **machine learning engineer**, and **educator**.
 
-## 🖥️ Live Demo
-🔗 [Visit the Portfolio](https://your-portfolio-link.com) *(Replace with your actual domain or GitHub Pages link)*
+---
+
+## 📸 Preview
+
+Here are a few screenshots from the website:
+
+<p align="center">
+  <img src="images/p1.png" alt="Homepage" width="700"/><br>
+  <img src="images/p2.png" alt="Projects Section" width="700"/><br>
+  <img src="images/p3.png" alt="Experience Section" width="700"/><br>
+  <img src="images/p4.png" alt="Education Section" width="700"/>
+</p>
 
 ---
 
@@ -29,7 +39,7 @@ Welcome to my personal portfolio! This website showcases my academic background,
 
 - **Frontend:** HTML5, CSS3, Bootstrap, JavaScript
 - **Backend:** Flask (Python)
-- **Deployment:** GitHub Pages / Heroku / Render *(choose based on what you're using)*
+- **Deployment:** GitHub Pages
 
 ---
 
@@ -37,9 +47,9 @@ Welcome to my personal portfolio! This website showcases my academic background,
 
 Feel free to reach out:
 
-- 📫 Email: your.email@example.com  
-- 🌐 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)  
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+- 📫 Email: abdeldjalilhani0@gmail.com
+- 🌐 LinkedIn: [Your LinkedIn](www.linkedin.com/in/abdeldjalil-hani-b50172205)  
+- 🐙 GitHub: [@yourusername](https://github.com/AbdeldjalilHANI)
 
 ---
 
