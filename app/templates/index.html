@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Abdeldjalil HANI</span></h1>
+        <p>A Ph.D. student in Quantum Computing, a senior in AI and Machine Learning (NLP, Computer Vision, Deep Learning), and a skilled backend developer creating smart, scalable web applications</p>
+        <a href="{{ url_for('main.contact') }}" class="btn">Get In Touch</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/hero-image.jpg') }}" alt="Profile Image">
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+                <h3>Ph.D. in Quantum Computing</h3>
+                <p>Setif 1 University</p>
+                <ul>
+                    <li>Ranked 1st place in doctoral competition among 872 candidates</li>
+                    <li>Research focus: Quantum metaheuristics for complex health problems optimization</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-date">2022 - 2024</div>
+            <div class="timeline-content">
+                <h3>Master's Degree in Artificial Intelligence</h3>
+                <p>Specialization: Data Science, Computer Vision, NLP</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-date">2019 - 2022</div>
+            <div class="timeline-content">
+                <h3>Bachelor's Degree in Computer Science</h3>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+                <h3>Baccalaureate in Mathematics</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section class="experience">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-date">Feb 2025 - Present</div>
+            <div class="timeline-content">
+                <h3>Temporary University Teacher</h3>
+                <p>Setif 1 University</p>
+                <ul>
+                    <li>Teaching tutorials and practical work (TD&TP) in Algorithms and Data Structures</li>
+                    <li>Conducting practical sessions (TP) in Numerical Methods</li>
+                    <li>Mentoring students in fundamental computer science concepts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-date">Nov - Dec 2024</div>
+            <div class="timeline-content">
+                <h3>Computer Scientist</h3>
+                <p>SARL Maprogaz</p>
+                <ul>
+                    <li>ERP system implementation and monitoring</li>
+                    <li>Provided technical support and troubleshooting</li>
+                    <li>Managed data entry and database maintenance</li>
+                    <li>Optimized business processes through technology solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>Artificiel intelligence</h3>
+            <p>Builds intelligent systems for real-world decision-making and automation</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>Machine learning</h3>
+            <p>Develops models for image analysis and language understanding</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-database"></i>
+            <h3>Data Science</h3>
+            <p>Extracts insights from data using analysis and predictive modeling</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive and interactive websites</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>Backend</h3>
+            <p>Creates scalable APIs and services with modern backend tools</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        {% for project in projects %}
+        <div class="project-card">
+            <img src="{{ project.image_url or url_for('static', filename='images/project-placeholder.png') }}" alt="{{ project.title }}">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.project_url or '#' }}" class="btn">View Project</a>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('main.projects') }}" class="btn view-all">View All Projects</a>
+</section>
+{% endblock %}
