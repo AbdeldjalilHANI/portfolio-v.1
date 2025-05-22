@@ -48,8 +48,8 @@ Here are a few screenshots from the website:
 Feel free to reach out:
 
 - 📫 Email: abdeldjalilhani0@gmail.com
-- 🌐 LinkedIn: [Your LinkedIn](www.linkedin.com/in/abdeldjalil-hani-b50172205)  
-- 🐙 GitHub: [@yourusername](https://github.com/AbdeldjalilHANI)
+- 🌐 LinkedIn: [LinkedIn](www.linkedin.com/in/abdeldjalil-hani-b50172205)  
+- 🐙 GitHub: [@AbdeldjalilHANI](https://github.com/AbdeldjalilHANI)
 
 ---
 
